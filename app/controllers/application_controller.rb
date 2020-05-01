@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   end
   
   def require_login
-    redirect_to :login unless session.include? :name
+    redirect_to :login unless current_user
   end
   
 end
