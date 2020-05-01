@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   end
   
   def require_login
-    redirect_to
+    unless 
   end
   
 end
