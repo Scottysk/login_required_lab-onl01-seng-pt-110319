@@ -1,10 +1,11 @@
 class SecretsController < ApplicationController
+  before_action :require_login
+  
+  
   def new
   end
   
   def show
-    if !logged_in?
-      redirect_to '/login'
   end
   
 end
